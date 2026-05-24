@@ -7,7 +7,6 @@ import cors from "cors";
 import userRoutes from "./routers/user.router.js";
 import dotenv from "dotenv";
 dotenv.config();
-
 const app = express();
 const server = createServer(app);
 const io = connectToSocket(server);
